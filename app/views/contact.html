@@ -1,0 +1,33 @@
+<div class="container">
+    <br />
+    <form action="https://docs.google.com/forms/d/1X7DnYf4UrTnefBrr4ZMqJiEOywY6kCEIqLkax7hjh4g/formResponse" method="POST" id="ss-form" target="postResponse" onsubmit="" role="form">
+        <div class="form-group" data-ng-class="nameClass()">
+            <label for="entry_886471654">Nome:</label>
+            <input type="text" class="form-control" data-ng-model="name" name="entry.886471654" id="entry_886471654" placeholder="Nome" />
+        </div>
+        <div class="form-group" data-ng-class="emailClass()">
+            <label for="entry_1438473038">E-Mail:</label>
+            <input type="text" class="form-control" data-ng-model="email" name="entry.1438473038" id="entry_1438473038" placeholder="Email" />
+        </div>
+        <div class="form-group" data-ng-class="messageClass()">
+            <label for="entry_1386071658">Mensagem:</label>
+            <textarea name="entry.1386071658" rows="4" data-ng-model="message" class="form-control" cols="0" id="entry_1386071658" dir="auto" placeholder="Mensagem"></textarea>
+        </div>
+        <button type="button" data-ng-disabled="!validateForm()" class="btn btn-default" onclick="submitForm()">Enviar</button>
+    </form>
+    <br />
+    <div class="alert alert-success hiddenTitle" id="okMessage">
+        <strong>Mensagem enviada!</strong>&nbsp;Sua mensagem foi enviada ao MGI, em breve entraremos em contato.
+    </div>
+    <iframe hidden="hidden" name="postResponse" id="postResponse"></iframe>
+</div>
+<script>
+    function submitForm(){
+        document.getElementById('ss-form').submit();
+        
+        document.getElementById('entry_886471654').value = '';
+        document.getElementById('entry_1438473038').value = '';
+        document.getElementById('entry_1386071658').value = '';
+        document.getElementById('okMessage').classList.remove('hiddenTitle');
+    }
+</script>

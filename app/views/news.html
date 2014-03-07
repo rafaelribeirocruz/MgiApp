@@ -1,0 +1,22 @@
+<div class="noBorder" data-ng-init="loadRssFeed()">
+    <br />
+    <div data-ng-show="showFilters()" class="panel panel-default">
+        <div class="panel-body float-right">
+            <strong>Filtrando: </strong>{{searchQuery}}&nbsp;<button type="button" data-ng-click="clearFilters()"><span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+    </div>
+    
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default" data-ng-repeat="item in newsList" data-ng-show="displayItem(item)">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" onclick="return false;" data-parent="#accordion" data-ng-href="#{{item.$$hashKey}}">{{item.title}}</a>
+                  <span class="pull-right caret"></span>
+              </h4>
+          </div>
+          <div id="{{item.$$hashKey}}" class="panel-collapse collapse">
+              <div class="panel-body" data-ng-bind-html="trustedHtml(item.content)"></div>
+          </div>
+      </div>
+    </div>
+</div>

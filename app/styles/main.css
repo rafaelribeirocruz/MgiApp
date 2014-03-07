@@ -1,0 +1,294 @@
+/* Space out content a bit */
+html{
+    overflow-x:hidden;
+}
+
+body {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.teamBadge {
+    width: 35px;
+    height: 35px;
+}
+
+.white{
+    color:#fff;
+}
+
+.navbar-blue{
+    background-color:#0095D9;
+    border-color:#0F71B8;
+}
+
+.navbar-inverse .navbar-toggle{
+    border-color:#0F71B8;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+    background-color:#0F71B8;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border-color:#0F71B8;
+}
+
+.hiddenTitle{
+    display:none;
+}
+
+.menuButton{
+    width:65px;
+    height:65px;
+    margin-right:-5px;
+    margin-left:3px;
+    padding: 0px 0px 0px 0px;
+    background-color:#0095D9;
+    box-shadow: inset 1px 1px 20px 2px #0F71B8;
+    -webkit-box-shadow: inset 1px 1px 20px 2px #0F71B8;
+}
+
+.menuTitle{
+    background-color:#6F570D;
+    color:white;
+    /*font-weight:bold;*/
+    font-size:smaller;
+    display:inline;
+    padding:10px 10px 10px 5px;
+    /*margin-right:10px;*/
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset 1px 1px 20px 2px #9F7916;
+    -webkit-box-shadow: inset 1px 1px 20px 2px #9F7916;
+}
+
+.mainMenuTitle{
+    background-color:#6F570D;
+    color:white;
+    /*font-weight:bold;*/
+    font-size:large;
+    display:inline-flex;
+    width:55%;
+    padding:10px 10px 10px 5px;
+    /*margin-right:10px;*/
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset 1px 1px 20px 2px #9F7916;
+    -webkit-box-shadow: inset 1px 1px 20px 2px #9F7916;
+}
+
+.inlineMenu{
+    display:inline;
+}
+
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open 
+.dropdown-toggle.btn-primary.menuButton{
+    background-color:#0F71B8;
+    box-shadow: inset 1px 1px 20px 2px #0095D9;
+    -webkit-box-shadow: inset 1px 1px 20px 2px #0095D9;
+}
+
+.contactIcon{
+    content:url(../images/icone_faleconosco_peq.png);
+}
+
+.contactBigIcon{
+    content:url(../images/icone_faleconosco.png);
+}
+
+.calendarIcon{
+    content:url(../images/icone_relogio_peq.png);
+}
+
+.calendarBigIcon{
+    content:url(../images/icone_relogio.png);
+}
+
+.newsIcon{
+    content:url(../images/icone_noticia_peq.png);
+}
+
+.newsBigIcon{
+    content:url(../images/icone_noticia.png);
+}
+
+.loadingIcon{
+    content:url(../images/loading.gif);
+}
+
+.starTitle{
+    content:url(../images/estrelas_peq.png);
+}
+
+.smallLogo{
+    content:url(../images/logo_peq.png);
+}
+
+footer{
+    /*margin: 0% -320px;*/
+    position: fixed;
+    width:100%;
+    /*left: 100%;*/
+    bottom: 0%;
+    background: none repeat scroll 0% 0% #FFF;
+}
+
+.footer{
+    padding-top:5px;
+}
+
+.noBorder{
+    padding-right:0px;
+    padding-left:0px;
+}
+
+.logoHeader{
+    padding-left:40px;
+}
+
+.gradientBlue{
+    background-color:#0F71B8;
+    box-shadow: inset 1px 1px 25px 4px #0095D9;
+    -webkit-box-shadow: inset 1px 1px 25px 4px #0095D9;
+}
+
+.mainMenuItem{
+    padding: 10px 10px 10px 50px;
+}
+
+.mainMenuButton{
+    width:100px;
+    height:100px;
+    background-color:#0095D9;
+    padding: 5px 0px 0px 0px;
+    margin-right:-5px;
+    box-shadow: inset 1px 1px 20px 2px #0F71B8;
+    -webkit-box-shadow: inset 1px 1px 20px 2px #0F71B8;
+}
+
+.splashBody{
+    background-color:#FFF;
+    box-shadow: inset 1px 1px 20px 2px #000;
+    -webkit-box-shadow: inset 1px 1px 20px 2px #333;
+}
+
+.splashContent{
+    /*display:inline-flex;*/
+}
+
+.splashContent img{
+    padding-top:50px;
+    width: 75%;
+    max-width:500px;
+}
+
+.facebookIcon{
+    content:url(../images/facebook.png);
+}
+
+.facebookSmall{
+    content:url(../images/facebook_small.png);
+    vertical-align:middle;
+}
+
+.smallIcon{
+    height:25px;
+    width:25px;
+}
+
+.twitterIcon{
+    content:url(../images/twitter.png);
+}
+
+.twitterSmall{
+    content:url(../images/twitter_small.png);
+    vertical-align:middle;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
