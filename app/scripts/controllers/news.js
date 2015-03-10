@@ -5,6 +5,7 @@ angular.module('mgiApp')
       $scope.rssFeedResult = "";
       $scope.newsList = [];
       $scope.searchQuery = "";
+      $scope.loadedComplete = false;
       
       if($routeParams.query){
           $scope.searchQuery = decodeURIComponent($routeParams.query);
@@ -42,6 +43,8 @@ angular.module('mgiApp')
                 var list = $scope.newsList.concat(result);
                 
                 $scope.newsList = list;
+
+                $scope.loadedComplete = true;
             });
         };
       

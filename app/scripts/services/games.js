@@ -6,15 +6,15 @@ angular.module('mgiApp')
             getMatchList: function (lastMatch) {
                 var deferred = $q.defer();
                 
-                $http.defaults.useXDomain = true;    
+                //$http.defaults.useXDomain = true;    
                 
                 $http({
                     url: Util.getGamesServiceUrl(lastMatch),
-                    method: 'GET',
+                    method: 'jsonp',
                     responseType: 'json'
                 })
                 .success(function (data){
-                    deferred.resolve(data);
+                    deferred.resolve(data.Data);
                 })
                 .error(function (data, status, headers, config){
                     deferred.reject('Erro carregando jogos, tente novamente!');

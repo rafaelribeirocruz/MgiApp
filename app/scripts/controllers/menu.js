@@ -7,18 +7,21 @@ angular.module('mgiApp')
         $scope.Items = [
             {
                 name: 'Notícias do MGI',
+                smallName: 'Notícias',
                 target: '#news',
                 icon: 'newsIcon',
                 image: 'newsBigIcon'
             },
             {
                 name: 'Agenda de Jogos',
+                smallName: 'Calendário',
                 target: '#calendar',
                 icon: 'calendarIcon',
                 image: 'calendarBigIcon'
             },
             {
                 name: 'Fale com o MGI',
+                smallName: 'Contato',
                 target: '#contact',
                 icon: 'contactIcon',
                 image: 'contactBigIcon'

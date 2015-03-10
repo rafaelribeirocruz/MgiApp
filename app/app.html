@@ -37,16 +37,18 @@
                     <div class="form-group">
                         <input type="text" class="form-control" id="searchField" placeholder="Pesquisa">
                     </div>
-                    <button type="submit" class="btn btn-default" onclick="Util.searchNews('searchField')">Pesquisar</button>
+                    <button type="submit" class="btn btn-default" onclick="Util.searchNews('searchField')" data-toggle="collapse" data-target="#searchBox">Pesquisar</button>
                 </form>
             </div>
         </div>
     </div>
-    <div id="menuApp" class="row" data-ng-controller="MenuCtrl">
-        <div class="col-md-4">
+    <div id="menuApp" data-ng-controller="MenuCtrl">
+        <div class="centeredMenu">
             <div class="inlineMenu" data-ng-repeat="item in Items">
-                <a data-ng-href="{{item.target}}" data-ng-click="selectItem(item)" class="btn btn-primary btn-lg menuButton"><span data-ng-class="item.icon"></span></a>
-                <div data-ng-show="showMenuTitle(item)" class="menuTitle">{{item.name}}</div>
+                <div class="shadowElement">
+                    <a data-ng-href="{{item.target}}" data-ng-click="selectItem(item)" class="btn btn-primary btn-lg menuButton"><span data-ng-class="item.icon"></span></a>
+                </div>
+                <div data-ng-show="showMenuTitle(item)" class="menuTitle goldenBox">{{item.smallName}}</div>
             </div>
         </div>
     </div>

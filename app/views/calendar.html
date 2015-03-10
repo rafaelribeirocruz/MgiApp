@@ -3,9 +3,9 @@
     <div class="text-center" data-ng-hide="loadedComplete"><span class="loadingIcon"></span></div>
     <ul ng-cloak class="list-group">
         <li data-ng-repeat="match in matches" class="list-group-item">
-            <h6>{{match.DiaSemana}} - {{match.PartidaData}} {{match.PartidaHora}} - {{match.EstadioNome}} - {{match.CidadeNome}}</h6>
-            <h5><img class="teamBadge" ng-src="{{match.EscudoMandante}}" />{{match.NomeMandante}} {{match.PlacarMandante}} X {{match.PlacarVisitante}} {{match.NomeVisitante}}<img class="teamBadge" ng-src="{{match.EscudoVisitante}}" /></h5>
-            <span>{{match.CampeonatoNome}}</span>
+            <h6>{{match.DataHora}} - {{match.Estadio}} - {{match.Cidade}}</h6>
+            <h5><img class="teamBadge" ng-src="{{getLogoUrl(match.LogoMandante)}}" />{{match.Mandante}} {{match.PlacarMandante}} X {{match.PlacarVisitante}} {{match.Visitante}}<img class="teamBadge" ng-src="{{getLogoUrl(match.LogoVisitante)}}" /></h5>
+            <span>{{match.Campeonato}}</span>
         </li>
     </ul>
     <ul class="pager">
@@ -13,4 +13,5 @@
             <a type="button" data-ng-show="loadedComplete" data-ng-click="loadMoreMatches()">{{loadingButton}}</a>
         </li>
     </ul>
+    <hr>
 </div>

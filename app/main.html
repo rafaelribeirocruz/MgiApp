@@ -43,15 +43,18 @@
         </div>
     </div>
     <div id="menuApp" data-ng-controller="MenuCtrl">
-        <div class="row">
+        <div class="centeredMenu">
             <div class="col-md-4 mainMenuItem" data-ng-repeat="item in Items">
-                <a data-ng-href="app.html{{item.target}}" data-ng-click="selectItem(item)" class="btn btn-primary btn-lg mainMenuButton"><span data-ng-class="item.image"></span></a>
-                <div class="mainMenuTitle"><span>{{item.name}}</span></div>
+                <div class="shadowElement">
+                    <a data-ng-href="app.html{{item.target}}" data-ng-click="selectItem(item)" class="btn btn-primary btn-lg mainMenuButton">
+                        <span data-ng-class="item.image"></span>
+                    </a>
+                </div>
+                <div class="mainMenuTitle goldenBox"><span>{{item.name}}</span></div>
             </div>
         </div>
     </div>
     <!-- Add your site or application content here -->
-
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
